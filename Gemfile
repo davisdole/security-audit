@@ -11,10 +11,6 @@ gem 'puma'
 # Bunch of bundled DB adaptors for use when on JRuby.
 gem 'activerecord-jdbc-adapter', platform: :jruby
 
-# SQLite DB (Default)
-gem 'sqlite3', platform: :ruby
-gem 'jdbc-sqlite3', platform: :jruby
-
 # Postgres DB (Optional)
 gem 'pg', platform: :ruby
 gem 'jdbc-postgres', platform: :jruby
