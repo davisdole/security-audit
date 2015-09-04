@@ -1,0 +1,35 @@
+# To create a user for this webapp, run the following from PG's SQL console:
+#
+#   CREATE USER arachni WITH PASSWORD 'secret' CREATEDB;
+#
+# (Update the credentials in both the above SQL query and the bellow settings appropriately.)
+
+development:
+  host: ec2-107-21-106-196.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode
+  database: datg4n7m616ksh
+  pool: 50
+  username: jbyytuncgmuwtg
+  password: avm-uPRFZRIXTWVqlw0qRK2opM
+
+test: &test
+  host: ec2-107-21-106-196.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode
+  database: datg4n7m616ksh
+  pool: 50
+  username: jbyytuncgmuwtg
+  password: avm-uPRFZRIXTWVqlw0qRK2opM
+
+production:
+  host: ec2-107-21-106-196.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode
+  database: datg4n7m616ksh
+  pool: 50
+  username: jbyytuncgmuwtg
+  password: avm-uPRFZRIXTWVqlw0qRK2opM
+
+cucumber:
+  <<: *test
