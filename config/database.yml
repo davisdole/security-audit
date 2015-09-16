@@ -5,15 +5,12 @@
 # (Update the credentials in both the above SQL query and the bellow settings appropriately.)
 
 development:
-  host: localhost
   adapter: postgresql
-  encoding: unicode
-  database: arachni_development
-  pool: 50
-  username: arachni
-  password: secret
+  host: localhost
+  username: user
+  database: app-dev
 
-test: &test
+test: 
   host: localhost
   adapter: postgresql
   encoding: unicode
