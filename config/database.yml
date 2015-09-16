@@ -6,21 +6,21 @@
 
 development:
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  database: postgres
+  pool: 5
+  timeout: 5000
 
-# test: 
-  # adapter: postgresql
-  # host: localhost
-  # username: user
-  # database: app-dev
+test: &test
+  adapter: postgresql
+  database: postgres
+  pool: 5
+  timeout: 5000
 
 production:
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  database: postgres
+  pool: 5
+  timeout: 5000
 
 cucumber:
   <<: *test
