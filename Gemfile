@@ -6,7 +6,7 @@ gem 'rails', '4.1.7.1'
 gem 'ffi', '1.9.6'
 
 # Web server.
-gem 'puma'
+gem 'pg’
 
 # Bunch of bundled DB adaptors for use when on JRuby.
 gem 'activerecord-jdbc-adapter', platform: :jruby
