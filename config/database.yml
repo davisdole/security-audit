@@ -6,19 +6,19 @@
 
 development:
   adapter: postgresql
-  database: postgres
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
 
 test: &test
   adapter: postgresql
-  database: postgres
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: postgres
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
 
