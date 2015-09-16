@@ -10,23 +10,17 @@ development:
   username: user
   database: app-dev
 
-test: 
-  host: localhost
-  adapter: postgresql
-  encoding: unicode
-  database: arachni_test
-  pool: 50
-  username: arachni
-  password: secret
+# test: 
+  # adapter: postgresql
+  # host: localhost
+  # username: user
+  # database: app-dev
 
 production:
-  host: localhost
   adapter: postgresql
-  encoding: unicode
-  database: arachni_production
-  pool: 50
-  username: arachni
-  password: secret
+  host: localhost
+  username: user
+  database: app-dev
 
 cucumber:
   <<: *test
