@@ -5,25 +5,49 @@
 # (Update the credentials in both the above SQL query and the bellow settings appropriately.)
 
 development:
+  host: localhost
   adapter: postgresql
-  database: arachni
+<<<<<<< HEAD
+  encoding: unicode
+  database: arachni_development
+  pool: 50
+  username: postgres
   password: sonic123
+=======
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
+>>>>>>> parent of 2cb4ead... update
 
 test: &test
+  host: localhost
   adapter: postgresql
-  database: arachni
+<<<<<<< HEAD
+  encoding: unicode
+  database: arachni_test
+  pool: 50
+  username: postgres
   password: sonic123
+=======
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
+>>>>>>> parent of 2cb4ead... update
 
 production:
+  host: localhost
   adapter: postgresql
-  database: arachni
+<<<<<<< HEAD
+  encoding: unicode
+  database: arachni_production
+  pool: 50
+  username: postgres
   password: sonic123
+=======
+  database: datg4n7m616ksh
   pool: 5
   timeout: 5000
+>>>>>>> parent of 2cb4ead... update
 
 cucumber:
   <<: *test
